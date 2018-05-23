@@ -1,0 +1,84 @@
+.student-portal-container {
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". Student ."
+    ". Student ."
+    ". . .";
+
+    height: 100vh;
+    width: auto;
+
+    background-color: lightblue;
+
+}
+
+.login-container {
+    grid-area: Student;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title"
+    "username"
+    "password"
+    "login-buttons";
+}
+
+.login-title {
+    grid-area: title;
+    align-self: center;
+    justify-self: center;
+
+    color: white;
+    font-size: 8vh;
+}
+
+.login-user-name {
+    grid-area: username;
+    height: 5vh;
+    width: 20vh;
+    align-self: center;
+    justify-self: center;
+
+    border-radius: 5px;
+
+}
+
+.login-user-pass {
+    grid-area: password;
+    height: 5vh;
+    width: 20vh;
+    align-self: center;
+    justify-self: center;
+
+    border-radius: 5px;
+}
+
+.login-buttons-container {
+    grid-area: login-buttons;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "login cancel";
+}
+
+.login-button {
+    grid-area: login;
+    height: 5vh;
+    width: 20vh;
+    align-self: center;
+    justify-self: center;
+}
+
+.cancel-button {
+    grid-area: cancel;
+    height: 5vh;
+    width: 20vh;
+    align-self: center;
+    justify-self: center;
+}

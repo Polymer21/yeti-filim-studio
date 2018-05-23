@@ -1,0 +1,14 @@
+.home-container {
+    display: grid;
+    background-color: light-pink;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr .25fr;
+    height: 525vh;
+    grid-template-areas: 
+    "Welcome"
+    "Calendar"
+    "Classes"
+    "Instructors"
+    "Stay-Colab"
+    "Footer";
+}

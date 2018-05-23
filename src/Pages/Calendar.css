@@ -1,0 +1,40 @@
+.calendar-container {
+    grid-area: Calendar;
+    display: grid;
+    grid-template-rows: 1.5fr 3.5fr .25fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "calendar"
+    ".";
+
+    background-color: lightblue;
+}
+
+.calendar-slots {
+    grid-area: calendar;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Monday Tuesday Wednesday Thursday"
+    "Monday Tuesday Wednesday Thursday"
+    "Monday Tuesday Wednesday Thursday"
+    "Monday Tuesday Wednesday Thursday";
+    grid-column-gap: 2vh;
+    grid-row-gap: 2vh;
+    
+}
+
+.calendar-slots > div {
+    background-color: grey;
+}
+
+.monday {
+    grid-area: Monday;
+}
+
+.tuesday {
+    grid-area: Tuesday;
+}
+

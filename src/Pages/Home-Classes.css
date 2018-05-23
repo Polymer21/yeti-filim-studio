@@ -1,0 +1,31 @@
+.home-classes-container {
+    grid-area: Classes;
+    display: grid;
+    grid-template-rows: 1fr 3.25fr .75fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "class-box-header"
+    "class-box"
+    "footer";
+
+}
+
+.class-box-container{
+    grid-area: class-box;
+    display: grid;
+    grid-template-columns: 1fr 2fr .5fr 2fr .5fr 2fr 1fr;
+    grid-template-areas: 
+    ". class-one . class-two . class-three . "
+}
+
+.class-card{
+    grid-area: class-one;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-columns: .5fr 3fr .5fr;
+    grid-template-areas: 
+    "card-title card-title card-title"
+    "card-content card-content card-content"
+    ". button ."
+    "footer footer footer"
+}

@@ -1,0 +1,3 @@
+targets:
+  yetiprod: shared-us-west-2/cjhibaff95vfv01574uofbwp3
+  default: yetiprod

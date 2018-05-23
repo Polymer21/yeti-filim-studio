@@ -1,0 +1,51 @@
+.welcome-container {
+    grid-area: Welcome;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "logo nav"
+    "photo photo"
+    "photo photo";
+
+}
+
+.home-photo {
+    grid-area: photo;
+}
+
+.button-container {
+    position: absolute;
+    right: 10vh;
+    top: 90vh;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr .25fr 1fr;
+    grid-template-areas: 
+    "apply . get";
+}
+
+.apply-now-link {
+    grid-area: apply;
+    text-decoration: none;
+    color: white;
+}
+
+.apply-now-button {
+    background-color: lightpink;
+    height: 4vh;
+    width: 14vh;
+    color: white;
+
+}
+.get-more-button {
+    background-color: lightpink;
+    height: 4vh;
+    width: 14vh;
+    color: white;
+}
+
+.get-more-link {
+    grid-area: get;
+}
